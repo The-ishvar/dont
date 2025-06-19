@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bodycolor);
+            box-sizing: border-box;
+            min-height: 100vh;
+        }
+        :root{
+            --bodycolor: rgba(25, 24, 24, 0.845);
+            --navbar: rgba(169, 180, 180, 0.808);
+            --buttonhover: rgb(56, 56, 56);
+            --whitecolor:white;
+            --black:black;
+        }
+        
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-color: var(--navbar);
+            box-shadow: 5px 5px 15px;
+            width: 100%;
+            height: 50px;
+            border-radius: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        h1 {
+            margin-left: 15px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 10px;
+            gap: 20px;
+
+        }
+
+        li {
+            font-size: 22px;
+        }
+
+        .classcard {
+            margin-top: 10px;
+        }
+
+        .class1 {
+            align-items: center;
+            justify-content: center;
+            border-radius: 15px;
+            width: 310px;
+            margin: 15px auto;
+            min-height: 250px;
+            box-shadow: 5px 5px 10px;
+            overflow: hidden;
+        }
+
+        .class1 {
+            display: grid;
+            grid-template-columns: 90px 90px 90px;
+            column-gap: 9px;
+        }
+
+        .class button {
+            border-radius: 20px;
+            height: 40px;
+        }
+
+        .card {
+            border-radius: 15px;
+            width: 310px;
+            margin: 15px auto;
+            min-height: 320px;
+            box-shadow: 5px 5px 10px;
+            overflow: hidden;
+        }
+
+        .card button:hover {
+            background-color:var(--buttonhover);
+            color: var(--whitecolor);
+            width: 150px;
+            height: 40px;
+            font-size: 20px;
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        .card button {
+            min-width: 100px;
+            min-height: 30px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        button{
+            box-shadow: 5px 5px 15px;
+        }
+        button:hover{
+            background-color: var(--whitecolor);
+        }
+
+    .card:hover{
+        color: var(--whitecolor);
+    }
+    h1::first-line{
+    color: var(--whitecolor);
+    }
+
+        img {
+            width: 100%;
+            padding: 10px;
+            border-radius: 15px;
+        }
+
+        footer {
+            background-color: var(--navbar);
+            padding: 10px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        footer a {
+            color:var(--whitecolor);
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 12px;
+            background-color: var(--bodycolor);
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .class1 button {
+            background-color: var(--bodycolor);
+            color: var(--whitecolor);
+
+            height: 40px;
+            font-size: 20px;
+        }
+
+
+        footer a:hover {
+            background-color: var(--whitecolor);
+            color: var(--black);
+        }
+
+        @media (min-width:600px) {
+            .class {
+                display: flex;
+                flex-direction: row;
+                justify-items: space-around;
+                overflow-x: scroll;
+                width: 100%;
+                min-height: 150px;
+                flex-wrap: wrap;
+            }
+
+            .class button {
+                width: 100px;
+            }
+
+            .card {
+                width: 100%;
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .card img {
+                width: 45%;
+                box-shadow: 5px 5px 15px;
+            }
+
+            .text {
+                width: 55%;
+            }
+        }
+        @media (max-width:600px) {
+            .textpera{
+        display: none;
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Login</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="classcard">
+            <div class="class1 class">
+                <button>
+                    <h4>Class 1</h4>
+                </button>
+                <button>
+                    <h4>Class 2</h4>
+                </button>
+                <button>
+                    <h4>Class 3</h4>
+                </button>
+                <button>
+                    <h4>Class 4</h4>
+                </button>
+                <button>
+                    <h4>Class 5</h4>
+                </button>
+                <button>
+                    <h4>Class 6</h4>
+                </button>
+                <button>
+                    <h4>Class 7</h4>
+                </button>
+                <button>
+                    <h4>Class 8</h4>
+                </button>
+                <button>
+                    <h4>Class 9</h4>
+                </button>
+                <button>
+                    <h4>Class 10</h4>
+                </button>
+                <button>
+                    <h4>Class 11</h4>
+                </button>
+                <button>
+                    <h4>Class 12</h4>
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="ChatGPT Image Jun 16, 2025, 10_34_18 AM.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p> is me school ke bare me aaye ga ki school kesi he aperiam debitis, natus eos, enim autem illum
+                    impedit necessitatibus corporis.</p>
+                <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="school img2.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p>school ke class ke bare me aaye ga or school me kitne subject he kya kya he Lorem, ipsum dolor sit
+                    amet
+                    consectetur adipisicing elit. Inventore, fuga?</p>
+                     <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="school img2.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p>school ki anusasen ke bare me aaye ga Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Corporis,
+                    dolores! </p>
+                     <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="school img2.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p>school ke rikhold ke bare me aaye ga Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod,
+                    dolores. </p>
+                     <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="school img2.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p>is me school ke sir mam ke bare me aaye ga Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    A,
+                    ut.</p>
+                     <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="school img2.png" alt="foto">
+            <div class="text">
+
+                <h1> Welcome my school </h1>
+                <p>is mne school ke about ke bare me aaye ga </p>
+                 <p class="textpera">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi mollitia ea laboriosam. Temporibus
+                    cumque repellendus possimus atque aspernatur repudiandae!
+                </p>
+                <div class="button">
+                    <button>Other</button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+            <a href="#">WhatsApp</a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
